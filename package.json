@@ -1,5 +1,5 @@
 {
-  "name": "devconnector",
+  "name": "tavern",
   "version": "1.0.0",
   "description": "project for mern stack class",
   "main": "server.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sysani/mern-stack-project.git"
+    "url": "git+https://github.com/sysani/tavern.git"
   },
   "author": "sysani",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sysani/mern-stack-project/issues"
+    "url": "https://github.com/sysani/tavern/issues"
   },
-  "homepage": "https://github.com/sysani/mern-stack-project#readme",
+  "homepage": "https://github.com/sysani/tavern#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "config": "^3.3.1",
