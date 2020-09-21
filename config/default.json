@@ -1,3 +1,4 @@
 {
-  "mongoURI": "mongodb+srv://anita:MgDb192@tavern.ai2mg.mongodb.net/mern?retryWrites=true&w=majority"
+  "mongoURI": "mongodb+srv://anita:MgDb192@tavern.ai2mg.mongodb.net/mern?retryWrites=true&w=majority",
+  "jwtSecret": "mysecrettoken"
 }
