@@ -24,22 +24,23 @@ const ProfileSchema = new mongoose.Schema({
   },
   //list of groups user is in
   groups: [
-    //groups contains a list of objects containing a game, members, location and status (open/closed)
     {
-      game: String,
-      required: true
-    },
-    {
-      members: [String],
-      required: true
-    },
-    {
-      location: String,
-      required: true
-    },
-    {
-      status: Boolean,
-      required: true
+      game: {
+        type: String,
+        required: true
+      },
+      members: {
+        type: [String],
+        required: true
+      },
+      location: {
+        type: String,
+        required: true
+      },
+      status: {
+        type: Boolean,
+        required: true
+      }
     }
   ],
   date: {
