@@ -7,42 +7,25 @@ const ProfileSchema = new mongoose.Schema({
     ref: 'user'
   },
   location: {
-    type: String
+    type: String,
+    requred: true
   },
-  //status: looking for groups/in a group
+  //status: looking for groups/in a group looking for members/closed
   status: {
     type: String,
-    required: true
-  },
-  //list of games user is interested in
-  games: {
-    type: [String],
     required: true
   },
   bio: {
     type: String
   },
+  //list of games user is interested in
+  games: {
+    type: [String]
+  },
   //list of groups user is in
-  groups: [
-    {
-      game: {
-        type: String,
-        required: true
-      },
-      members: {
-        type: [String],
-        required: true
-      },
-      location: {
-        type: String,
-        required: true
-      },
-      status: {
-        type: Boolean,
-        required: true
-      }
-    }
-  ],
+  groups: {
+    type: [String]
+  },
   date: {
     type: Date,
     default: Date.now
